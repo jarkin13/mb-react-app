@@ -1,0 +1,25 @@
+.filter-selector {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
+  height: 32px;
+  padding: 0px 12px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  margin-right: 10px;
+}
+
+.filter-selector:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.filter-selector--active {
+  background-color: #030303;
+  border-color: #030303;
+  color: #fff;
+}

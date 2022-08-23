@@ -10,14 +10,20 @@ import "./index.css";
 
 const Header = () => {
   const [menuShow, setMenuShow] = useState(false);
+  const [notificationsShow, setNotificationsShow] = useState(false);
+  const [userMenuShow, setUserMenuShow] = useState(false);
 
   const onMenuClick = () => {
     setMenuShow(!menuShow);
   };
 
-  const onNotificationClick = () => {};
+  const onNotificationsClick = () => {
+    setNotificationsShow(!notificationsShow);
+  };
 
-  const onUserMenuClick = () => {};
+  const onUserMenuClick = () => {
+    setUserMenuShow(!userMenuShow);
+  };
   return (
     <header>
       <div className="column column-start">
@@ -46,7 +52,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="Mic">
+        <div className="mic">
           <div className="icon mic-icon">
             <MicIcon />
           </div>
@@ -58,17 +64,21 @@ const Header = () => {
             <VideoCameraIcon />
           </div>
         </div>
-        <div className="Notifications">
+        <div className="notifications" onClick={onNotificationsClick}>
           <div className="icon">
-            <div className="notifications-nav">
-              This is the notifications bell.
-            </div>
             <BellIcon />
+            {notificationsShow && (
+              <div className="notifications-nav">
+                This is the Notification Bell
+              </div>
+            )}
           </div>
         </div>
-        <div className="user-menu">
+        <div className="user-menu" onClick={onUserMenuClick}>
           <img src={userIcon} alt="user icon" />
-          <div className="user-menu-nav">this is the user menu.</div>
+          {userMenuShow && (
+            <div className="user-menu-nav">this is the user menu.</div>
+          )}
         </div>
       </div>
     </header>

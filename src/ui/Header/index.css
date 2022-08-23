@@ -93,7 +93,6 @@ header {
 
 .user-menu-nav {
   background: green;
-  display: none;
   position: absolute;
   left: -80px;
   width: 100px;
@@ -105,7 +104,6 @@ header {
 
 .notifications-nav {
   background: green;
-  display: none;
   position: absolute;
   left: -30px;
   width: 100px;
