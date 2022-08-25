@@ -1,7 +1,7 @@
 import Header from "./ui/Header";
 import Tags from "./ui/Tags";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header />
@@ -10,6 +10,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
