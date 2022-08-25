@@ -5,9 +5,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <div className="filterbar">
-        <Tags />
-      </div>
+      <Tags />
     </div>
   );
 };

@@ -1,9 +1,9 @@
 import Tag from "../Tag";
-import "./index.css";
+import FilterBar from "./subcomponents";
 
 const Tags = () => {
   return (
-    <div className="filterChips">
+    <FilterBar>
       <Tag text="All" />
       <Tag text="Live" />
       <Tag text="Music" />
@@ -21,7 +21,7 @@ const Tags = () => {
       <Tag text="Freestyle Rap" />
       <Tag text="Laughter" />
       <Tag text="Tools" />
-    </div>
+    </FilterBar>
   );
 };
 
