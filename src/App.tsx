@@ -1,5 +1,5 @@
 import Header from "./ui/Header";
-import Tag from "./ui/Tag";
+import Tags from "./ui/Tags";
 import "./App.css";
 
 function App() {
@@ -7,11 +7,7 @@ function App() {
     <div className="App">
       <Header />
       <div className="filterbar">
-        <Tag text="All" />
-        <Tag text="Live" />
-        <Tag text="Music" />
-        <Tag text="Gaming" />
-        <Tag text="KSI" />
+        <Tags />
       </div>
     </div>
   );
