@@ -1,6 +1,5 @@
 import Header from "./ui/Header";
 import Tags from "./ui/Tags";
-import "./App.css";
 
 function App() {
   return (
