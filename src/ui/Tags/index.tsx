@@ -4,7 +4,7 @@ import FilterBar from "./subcomponents";
 const Tags = () => {
   return (
     <FilterBar>
-      <Tag text="All" />
+      <Tag text="All" active />
       <Tag text="Live" />
       <Tag text="Music" />
       <Tag text="Gaming" />

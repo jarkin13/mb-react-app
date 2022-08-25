@@ -1,12 +1,15 @@
-import "./index.css";
+import { TagSelector, TagText } from "./subcomponents";
+
 interface TagProps {
   text: string;
+  active?: boolean;
 }
-const Tag = ({ text }: TagProps) => {
+
+const Tag = ({ active, text }: TagProps) => {
   return (
-    <div className="filter-selector">
-      <p>{text}</p>
-    </div>
+    <TagSelector $active={active}>
+      <TagText>{text}</TagText>
+    </TagSelector>
   );
 };
 
