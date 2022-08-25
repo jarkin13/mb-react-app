@@ -1,4 +1,5 @@
 import Tag from "../Tag";
+import "./index.css";
 
 const Tags = () => {
   return (
