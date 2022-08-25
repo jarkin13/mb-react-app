@@ -4,7 +4,7 @@ interface TagProps {
 }
 const Tag = ({ text }: TagProps) => {
   return (
-    <div className="filter-selector all-filter">
+    <div className="filter-selector">
       <p>{text}</p>
     </div>
   );
