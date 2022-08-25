@@ -6,9 +6,9 @@
   padding: 0px 12px;
   border-radius: 16px;
   box-sizing: border-box;
-  display: flex;
   flex-direction: row;
   align-items: center;
+  display: inline-flex;
   flex-wrap: nowrap;
   margin-right: 10px;
 }
