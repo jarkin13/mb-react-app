@@ -1,4 +1,6 @@
-.filterbar {
+import styled from "styled-components/macro";
+
+const FilterBar = styled.div`
   position: fixed;
   background-color: #fff;
   top: 56px;
@@ -9,4 +11,6 @@
   flex-wrap: nowrap;
   align-items: center;
   z-index: 2;
-}
+`;
+
+export default FilterBar;

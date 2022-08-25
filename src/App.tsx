@@ -1,16 +1,13 @@
 import Header from "./ui/Header";
 import Tags from "./ui/Tags";
-import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header />
-      <div className="filterbar">
-        <Tags />
-      </div>
+      <Tags />
     </div>
   );
-}
+};
 
 export default App;
