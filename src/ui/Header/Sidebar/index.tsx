@@ -41,31 +41,37 @@ const Sidebar = () => {
         <div className="sidebar-link library">
           <div className="icon-selector library-icon">
             <LibraryIcon />
+            <p>Library</p>
           </div>
         </div>
         <div className="sidebar-link history">
           <div className="icon-selector history-icon">
             <HistoryIcon />
+            <p>History</p>
           </div>
         </div>
         <div className="sidebar-link your-videos">
           <div className="icon-selector your-videos-icon">
             <YourVideosIcon />
+            <p>Your Videos</p>
           </div>
         </div>
         <div className="sidebar-link watch-later">
           <div className="icon-selector watch-later-icon">
             <WatchLaterIcon />
+            <p>Watch Later</p>
           </div>
         </div>
         <div className="sidebar-link liked-videos">
           <div className="icon-selector liked-videos-icon">
             <LikeVideosIcon />
+            <p>Liked Videos</p>
           </div>
         </div>
         <div className="sidebar-link show-more">
           <div className="icon-selector show-more-icon">
             <ShowMoreIcon />
+            <p>Show More</p>
           </div>
         </div>
       </div>
