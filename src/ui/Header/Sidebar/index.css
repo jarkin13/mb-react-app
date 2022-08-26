@@ -1,11 +1,7 @@
 .sidebar-link {
-  display: flex;
-  text-decoration: none;
-  color: #030303;
-  align-items: center;
-  padding: 0px 24px;
   height: 40px;
   width: 240px;
+  color: #030303;
 }
 
 .sidebar {
@@ -35,4 +31,7 @@
 
 .icon-selector:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  text-decoration: none;
+  align-items: center;
 }

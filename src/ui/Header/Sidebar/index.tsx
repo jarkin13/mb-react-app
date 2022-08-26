@@ -29,11 +29,13 @@ const Sidebar = () => {
         <div className="sidebar-link shorts">
           <div className="icon-selector shorts-icon">
             <ShortsIcon />
+            <p></p>
           </div>
         </div>
         <div className="sidebar-link subscriptions">
           <div className="icon-selector subs-icon">
             <SubscriptionsIcon />
+            <p>Subscriptions</p>
           </div>
         </div>
         <div className="sidebar-link library">
