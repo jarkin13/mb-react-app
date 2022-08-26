@@ -27,12 +27,12 @@
   display: block;
 }
 
-.icon--active {
+.icon-selector--active {
   background-color: #030303;
   border-color: #030303;
   color: #fff;
 }
 
 .icon-selector:hover {
-  background-color: rgba (0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
