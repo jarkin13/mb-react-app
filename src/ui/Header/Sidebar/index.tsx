@@ -15,52 +15,54 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="sidebar-inner">
         <div className="sidebar-link home">
-          <div className="icon home-icon">
+          <div className="icon-selector home-icon">
             <HomeIcon />
+            <p>Home</p>
           </div>
         </div>
         <div className="sidebar-link explore">
-          <div className="icon explore-icon">
+          <div className="icon-selector explore-icon">
             <ExploreIcon />
+            <p>Explore</p>
           </div>
         </div>
         <div className="sidebar-link shorts">
-          <div className="icon shorts-icon">
+          <div className="icon-selector shorts-icon">
             <ShortsIcon />
           </div>
         </div>
         <div className="sidebar-link subscriptions">
-          <div className="icon subs-icon">
+          <div className="icon-selector subs-icon">
             <SubscriptionsIcon />
           </div>
         </div>
         <div className="sidebar-link library">
-          <div className="icon library-icon">
+          <div className="icon-selector library-icon">
             <LibraryIcon />
           </div>
         </div>
         <div className="sidebar-link history">
-          <div className="icon history-icon">
+          <div className="icon-selector history-icon">
             <HistoryIcon />
           </div>
         </div>
         <div className="sidebar-link your-videos">
-          <div className="icon your-videos-icon">
+          <div className="icon-selector your-videos-icon">
             <YourVideosIcon />
           </div>
         </div>
         <div className="sidebar-link watch-later">
-          <div className="icon watch-later-icon">
+          <div className="icon-selector watch-later-icon">
             <WatchLaterIcon />
           </div>
         </div>
         <div className="sidebar-link liked-videos">
-          <div className="icon liked-videos-icon">
+          <div className="icon-selector liked-videos-icon">
             <LikeVideosIcon />
           </div>
         </div>
         <div className="sidebar-link show-more">
-          <div className="icon show-more-icon">
+          <div className="icon-selector show-more-icon">
             <ShowMoreIcon />
           </div>
         </div>
