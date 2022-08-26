@@ -17,10 +17,11 @@
 .icon-selector {
   cursor: pointer;
   height: 24px;
-  width: 24px;
+  width: 240px;
   padding: 0px 24px;
   margin: 0px 12px 0px 0px;
   display: block;
+  max-width: ;
 }
 
 .icon-selector--active {
@@ -34,4 +35,18 @@
   display: flex;
   text-decoration: none;
   align-items: center;
+}
+
+.sidebar p {
+  padding: 0px 24px;
+  display: flex;
+  justify-content: left;
+  position: fixed;
+}
+
+.sidebar .icon-selector:hover {
+  display: block;
+}
+
+.icons {
 }

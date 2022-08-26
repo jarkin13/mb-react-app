@@ -34,7 +34,7 @@ export const TagSelector = styled.div<TagSelectorProps>`
     } else {
       return `
       &:hover {
-        background-color: rgba(255, 0, 0, 0.1);
+        background-color: rgba(0, 0, 0, 0.1);
       }
       `;
     }
