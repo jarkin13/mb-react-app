@@ -1,13 +1,13 @@
-import { ReactComponent as ExploreIcon } from "./Header/explore.svg";
-import { ReactComponent as HistoryIcon } from "./baricons/history.svg";
-import { ReactComponent as LibraryIcon } from "./baricons/library.svg";
-import { ReactComponent as HomeIcon } from "./baricons/home.svg";
-import { ReactComponent as LikeVideosIcon } from "./baricons/like-videos.svg";
-import { ReactComponent as ShortsIcon } from "./baricons/shorts.svg";
-import { ReactComponent as ShowMoreIcon } from "./baricons/show-more.svg";
-import { ReactComponent as SubscriptionsIcon } from "./baricons/subscriptions.svg";
-import { ReactComponent as WatchLaterIcon } from "./baricons/watch-later.svg";
-import { ReactComponent as YourVideosIcon } from "./ui/Header/your-videos.svg";
+import { ReactComponent as ExploreIcon } from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/baricons/explore.svg";
+import { ReactComponent as HistoryIcon } from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/baricons/history.svg";
+import { ReactComponent as LibraryIcon } from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/baricons/home.svg";
+import { ReactComponent as HomeIcon } from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/baricons/library.svg";
+import { ReactComponent as LikeVideosIcon } from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/baricons/liked-videos.svg";
+import { ReactComponent as ShortsIcon } from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/baricons/shorts.svg";
+import { ReactComponent as ShowMoreIcon } from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/baricons/show-more.svg";
+import { ReactComponent as SubscriptionsIcon } from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/baricons/subscriptions.svg";
+import { ReactComponent as WatchLaterIcon } from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/baricons/watch-later.svg";
+import { ReactComponent as YourVideosIcon } from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/baricons/your-videos.svg";
 import "./index.css";
 
 const Sidebar = () => {
