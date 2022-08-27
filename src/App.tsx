@@ -1,6 +1,7 @@
 import Header from "./ui/Header";
-import Tags from "./ui/Tags";
 import Sidebar from "./ui/Header/Sidebar";
+import Tags from "./ui/Tags";
+//import Sidebar from "./ui/Header/Sidebar";
 
 const App = () => {
   return (
