@@ -17,7 +17,9 @@ const Sidebar = () => {
       <div className="sidebar-inner">
         <a href="/" className="sidebar-link home">
           <div className="LinkContent home-icon">
-            <HomeIcon />
+            <div className="sidebarIconColumn">
+              <HomeIcon />
+            </div>
             <SideTag text="Home" active />
           </div>
         </a>

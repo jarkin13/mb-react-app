@@ -1,11 +1,12 @@
 .sidebar-link {
   color: #030303;
+  margin: none;
+  padding: 0;
 }
 
 .LinkContent {
   cursor: pointer;
-  width: 24px;
-  padding: 0px 24px;
+  display: flex;
 }
 
 .LinkContent--active {
@@ -16,14 +17,23 @@
 
 .LinkContent:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  height: 40px;
+  width: 240px;
 }
 
 .sidebar p {
-  padding: 0px 48px;
+  padding: 0px 24px;
   display: flex;
   position: fixed;
 }
 
 .sidebarIconColumn {
   padding-top: 16px;
+  height: 24px;
+  width: 24px;
+}
+
+.sidebar {
+  background-color: red;
+  max-width: 240px;
 }
