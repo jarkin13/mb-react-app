@@ -15,66 +15,86 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar-inner">
-        <div className="sidebar-link home">
-          <div className="icon-selector home-icon">
+        <a href="/" className="sidebar-link home">
+          <div className="LinkContent home-icon">
             <HomeIcon />
             <SideTag text="Home" active />
           </div>
-        </div>
-        <div className="sidebar-link explore">
-          <div className="icon-selector explore-icon">
-            <ExploreIcon />
+        </a>
+
+        <a href="/" className="sidebar-link explore">
+          <div className="LinkContent explore-icon">
+            <div className="sidebarIconColumn">
+              <ExploreIcon />
+            </div>
             <SideTag text="Explore" active />
           </div>
-        </div>
-        <div className="sidebar-link shorts">
-          <div className="icon-selector shorts-icon">
-            <ShortsIcon />
+        </a>
+        <a href="/" className="sidebar-link shorts">
+          <div className="LinkContent shorts-icon">
+            <div className="sidebarIconColumn">
+              <ShortsIcon />
+            </div>
             <SideTag text="Shorts" active />
           </div>
-        </div>
-        <div className="sidebar-link subscriptions">
-          <div className="icon-selector subs-icon">
-            <SubscriptionsIcon />
+        </a>
+        <a href="/" className="sidebar-link subscriptions">
+          <div className="LinkContent subs-icon">
+            <div className="sidebarIconColumn">
+              <SubscriptionsIcon />
+            </div>
             <SideTag text="Subscriptions" active />
           </div>
-        </div>
-        <div className="sidebar-link library">
-          <div className="icon-selector library-icon">
-            <LibraryIcon />
+        </a>
+        <a href="/" className="sidebar-link library">
+          <div className="LinkContent library-icon">
+            <div className="sidebarIconColumn">
+              <LibraryIcon />
+            </div>
             <SideTag text="Library" active />
           </div>
-        </div>
-        <div className="sidebar-link history">
-          <div className="icon-selector history-icon">
-            <HistoryIcon />
+        </a>
+        <a href="/" className="sidebar-link history">
+          <div className="LinkContent history-icon">
+            <div className="sidebarIconColumn">
+              <HistoryIcon />
+            </div>
             <SideTag text="History" active />
           </div>
-        </div>
-        <div className="sidebar-link your-videos">
-          <div className="icon-selector your-videos-icon">
-            <YourVideosIcon />
+        </a>
+        <a href="/" className="sidebar-link your-videos">
+          <div className="LinkContent your-videos-icon">
+            <div className="sidebarIconColumn">
+              <YourVideosIcon />
+            </div>
             <SideTag text="Your Videos" active />
           </div>
-        </div>
-        <div className="sidebar-link watch-later">
-          <div className="icon-selector watch-later-icon">
-            <WatchLaterIcon />
+        </a>
+        <a href="/" className="sidebar-link watch-later">
+          <div className="LinkContent watch-later-icon">
+            <div className="sidebarIconColumn">
+              <WatchLaterIcon />
+            </div>
             <SideTag text="Watch Later" active />
           </div>
-        </div>
-        <div className="sidebar-link liked-videos">
-          <div className="icon-selector liked-videos-icon">
-            <LikeVideosIcon />
+        </a>
+        <a href="/" className="sidebar-link liked-videos">
+          <div className="LinkContent liked-videos-icon">
+            <div className="sidebarIconColumn">
+              <LikeVideosIcon />
+            </div>
             <SideTag text="Liked Videos" active />
           </div>
-        </div>
-        <div className="sidebar-link show-more">
-          <div className="icon-selector show-more-icon">
-            <ShowMoreIcon />
+        </a>
+
+        <a href="/" className="sidebar-link show-more">
+          <div className="LinkContent show-more-icon">
+            <div className="sidebarIconColumn">
+              <ShowMoreIcon />
+            </div>
             <SideTag text="Show More" active />
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );

@@ -1,42 +1,29 @@
 .sidebar-link {
-  height: 40px;
-  width: 240px;
   color: #030303;
 }
 
-.sidebar {
-  top: 24px;
-  position: absolute;
-  width: 240px;
-  bottom: 12px;
-}
-
-.sidebar-inner {
-  min-height: 100%;
-  overflow-y: scroll;
-}
-.icon-selector {
+.LinkContent {
   cursor: pointer;
-  height: 24px;
   width: 24px;
   padding: 0px 24px;
 }
 
-.icon-selector--active {
+.LinkContent--active {
   background-color: #030303;
   border-color: #030303;
   color: #fff;
 }
 
-.icon-selector:hover {
+.LinkContent:hover {
   background-color: rgba(0, 0, 0, 0.1);
-  display: flex;
-  text-decoration: none;
-  align-items: center;
 }
 
 .sidebar p {
   padding: 0px 48px;
   display: flex;
   position: fixed;
+}
+
+.sidebarIconColumn {
+  padding-top: 16px;
 }

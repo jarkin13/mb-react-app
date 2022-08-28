@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components/macro";
-import { findConfigFile } from "typescript";
 
 const activeTagStyles = css`
 background-color: #030303
