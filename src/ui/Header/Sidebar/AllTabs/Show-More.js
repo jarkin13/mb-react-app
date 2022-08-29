@@ -9,7 +9,7 @@ const ShowMoreTab = () => {
       <div className="sidebarIconColumn">
         <ShowMoreIcon />
       </div>
-      <SideTag text="ShowMore" active />
+      <SideTag text="Show More" active />
     </div>
   );
 };

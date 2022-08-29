@@ -1,17 +1,16 @@
 .sidebar-link {
-  color: #030303;
   max-width: 240px;
 }
 
 .LinkContent {
   cursor: pointer;
   display: flex;
+  align-items: center;
+  max-height: 40px;
 }
 
 .LinkContent:hover {
   background-color: rgba(0, 0, 0, 0.1);
-  height: 40px;
-  width: 240px;
 }
 
 .LinkContent:focus {
@@ -19,18 +18,14 @@
   color: red;
 }
 
-.sidebar p {
-  padding: 0px 24px;
-  display: flex;
-  position: fixed;
-}
-
 .sidebarIconColumn {
-  padding-top: 16px;
   height: 24px;
   width: 24px;
   padding-left: 24px;
 }
 
-.sidebar {
+.sidebar-link p {
+  padding: 0px 24px;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
 }

@@ -9,7 +9,7 @@ const YourVideosTab = () => {
       <div className="sidebarIconColumn">
         <YourVideosIcon />
       </div>
-      <SideTag text="YourVideos" active />
+      <SideTag text="Your Videos" active />
     </div>
   );
 };

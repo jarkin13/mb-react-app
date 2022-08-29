@@ -9,7 +9,7 @@ const LikedVideosTab = () => {
       <div className="sidebarIconColumn">
         <LikedVideosIcon />
       </div>
-      <SideTag text="LikedVideos" active />
+      <SideTag text="Liked Videos" active />
     </div>
   );
 };

@@ -9,7 +9,7 @@ const WatchLaterTab = () => {
       <div className="sidebarIconColumn">
         <WatchLaterIcon />
       </div>
-      <SideTag text="WatchLater" active />
+      <SideTag text="Watch Later" active />
     </div>
   );
 };
