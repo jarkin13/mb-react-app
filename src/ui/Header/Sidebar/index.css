@@ -1,7 +1,5 @@
 .sidebar-link {
   color: #030303;
-  margin: none;
-  padding: 0;
 }
 
 .LinkContent {
@@ -9,16 +7,16 @@
   display: flex;
 }
 
-.LinkContent--active {
-  background-color: #030303;
-  border-color: #030303;
-  color: #fff;
-}
-
 .LinkContent:hover {
   background-color: rgba(0, 0, 0, 0.1);
   height: 40px;
   width: 240px;
+}
+
+.LinkContent:active {
+  background-color: #030303;
+  border-color: #030303;
+  color: black;
 }
 
 .sidebar p {
@@ -31,9 +29,9 @@
   padding-top: 16px;
   height: 24px;
   width: 24px;
+  padding-left: 24px;
 }
 
 .sidebar {
-  background-color: red;
   max-width: 240px;
 }
