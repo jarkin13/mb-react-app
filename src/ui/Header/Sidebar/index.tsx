@@ -15,87 +15,66 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar-inner">
-        <a href="/" className="sidebar-link home">
-          <div className="LinkContent home-icon">
-            <div className="sidebarIconColumn">
-              <HomeIcon />
-            </div>
-            <SideTag text="Home" active />
+        <a href="/" className="sidebar-link LinkContent">
+          <div className="sidebarIconColumn">
+            <HomeIcon />
           </div>
+          <SideTag text="Home" active />
+        </a>
+        <a href="/" className="sidebar-link LinkContent">
+          <div className="sidebarIconColumn">
+            <ExploreIcon />
+          </div>
+          <SideTag text="Explore" active />
+        </a>
+        <a href="/" className="sidebar-link LinkContent">
+          <div className="sidebarIconColumn">
+            <ShortsIcon />
+          </div>
+          <SideTag text="Shorts" active />
+        </a>
+        <a href="/" className="sidebar-link LinkContent">
+          <div className="sidebarIconColumn">
+            <SubscriptionsIcon />
+          </div>
+          <SideTag text="Subscriptions" active />
+        </a>
+        <a href="/" className="sidebar-link LinkContent">
+          <div className="sidebarIconColumn">
+            <LibraryIcon />
+          </div>
+          <SideTag text="Library" active />
+        </a>
+        <a href="/" className="sidebar-link LinkContent">
+          <div className="sidebarIconColumn">
+            <HistoryIcon />
+          </div>
+          <SideTag text="History" active />
+        </a>
+        <a href="/" className="sidebar-link LinkContent">
+          <div className="sidebarIconColumn">
+            <YourVideosIcon />
+          </div>
+          <SideTag text="Your Videos" active />
+        </a>
+        <a href="/" className="sidebar-link LinkContent">
+          <div className="sidebarIconColumn">
+            <WatchLaterIcon />
+          </div>
+          <SideTag text="Watch Later" active />
+        </a>
+        <a href="/" className="sidebar-link LinkContent">
+          <div className="sidebarIconColumn">
+            <LikeVideosIcon />
+          </div>
+          <SideTag text="Liked Videos" active />
         </a>
 
-        <a href="/" className="sidebar-link explore">
-          <div className="LinkContent explore-icon">
-            <div className="sidebarIconColumn">
-              <ExploreIcon />
-            </div>
-            <SideTag text="Explore" active />
+        <a href="/" className="sidebar-link LinkContent">
+          <div className="sidebarIconColumn">
+            <ShowMoreIcon />
           </div>
-        </a>
-        <a href="/" className="sidebar-link shorts">
-          <div className="LinkContent shorts-icon">
-            <div className="sidebarIconColumn">
-              <ShortsIcon />
-            </div>
-            <SideTag text="Shorts" active />
-          </div>
-        </a>
-        <a href="/" className="sidebar-link subscriptions">
-          <div className="LinkContent subs-icon">
-            <div className="sidebarIconColumn">
-              <SubscriptionsIcon />
-            </div>
-            <SideTag text="Subscriptions" active />
-          </div>
-        </a>
-        <a href="/" className="sidebar-link library">
-          <div className="LinkContent library-icon">
-            <div className="sidebarIconColumn">
-              <LibraryIcon />
-            </div>
-            <SideTag text="Library" active />
-          </div>
-        </a>
-        <a href="/" className="sidebar-link history">
-          <div className="LinkContent history-icon">
-            <div className="sidebarIconColumn">
-              <HistoryIcon />
-            </div>
-            <SideTag text="History" active />
-          </div>
-        </a>
-        <a href="/" className="sidebar-link your-videos">
-          <div className="LinkContent your-videos-icon">
-            <div className="sidebarIconColumn">
-              <YourVideosIcon />
-            </div>
-            <SideTag text="Your Videos" active />
-          </div>
-        </a>
-        <a href="/" className="sidebar-link watch-later">
-          <div className="LinkContent watch-later-icon">
-            <div className="sidebarIconColumn">
-              <WatchLaterIcon />
-            </div>
-            <SideTag text="Watch Later" active />
-          </div>
-        </a>
-        <a href="/" className="sidebar-link liked-videos">
-          <div className="LinkContent liked-videos-icon">
-            <div className="sidebarIconColumn">
-              <LikeVideosIcon />
-            </div>
-            <SideTag text="Liked Videos" active />
-          </div>
-        </a>
-
-        <a href="/" className="sidebar-link show-more">
-          <div className="LinkContent show-more-icon">
-            <div className="sidebarIconColumn">
-              <ShowMoreIcon />
-            </div>
-            <SideTag text="Show More" active />
-          </div>
+          <SideTag text="Show More" active />
         </a>
       </div>
     </div>
