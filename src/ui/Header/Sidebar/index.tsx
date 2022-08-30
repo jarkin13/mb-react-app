@@ -8,22 +8,52 @@ import YourVideosTab from "./AllTabs/Your-Videos";
 import ShortsTab from "./AllTabs/Shorts";
 import LibraryTab from "./AllTabs/Library";
 import HistoryTab from "./AllTabs/HistoryTab";
+import { useState } from "react";
 
-const Sidebar = () => {
+import "./styles.css";
+
+export default function Tabs() {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = (event: {
+    currentTarget: { classList: { toggle: (arg0: string) => void } };
+  }) => {
+    event.currentTarget.classList.toggle("bg-salmon");
+  };
+
   return (
-    <div>
-      <HomeTab />
-      <ExploreTab />
-      <ShortsTab />
-      <SubscriptionsTab />
-      <LibraryTab />
-      <HistoryTab />
-      <YourVideosTab />
-      <WatchLaterTab />
-      <LikedVideosTab />
-      <ShowMoreTab />
+    <div className="Tabs">
+      <button onClick={handleClick}>
+        <HomeTab />
+      </button>
+      <button onClick={handleClick}>
+        <ExploreTab />
+      </button>
+
+      <button onClick={handleClick}>
+        <ShortsTab />
+      </button>
+      <button onClick={handleClick}>
+        <SubscriptionsTab />
+      </button>
+      <button onClick={handleClick}>
+        <LibraryTab />
+      </button>
+      <button onClick={handleClick}>
+        <HistoryTab />
+      </button>
+      <button onClick={handleClick}>
+        <YourVideosTab />
+      </button>
+      <button onClick={handleClick}>
+        <WatchLaterTab />
+      </button>
+      <button onClick={handleClick}>
+        <LikedVideosTab />
+      </button>
+      <button onClick={handleClick}>
+        <ShowMoreTab />
+      </button>
     </div>
   );
-};
-
-export default Sidebar;
+}
