@@ -8,8 +8,7 @@ import YourVideosTab from "./AllTabs/Your-Videos";
 import ShortsTab from "./AllTabs/Shorts";
 import LibraryTab from "./AllTabs/Library";
 import HistoryTab from "./AllTabs/HistoryTab";
-import { Tabs, Tab, TabPanel, TabList } from "react-tabs";
-import { useState } from "react";
+import { Tabs, Tab, TabList } from "react-tabs";
 
 import "./styles.css";
 
@@ -26,31 +25,24 @@ export default function curTab() {
         <Tab>
           <ShortsTab />
         </Tab>
-
         <Tab>
           <SubscriptionsTab />
         </Tab>
-
         <Tab>
           <LibraryTab />
         </Tab>
-
         <Tab>
           <HistoryTab />
         </Tab>
-
         <Tab>
           <YourVideosTab />
         </Tab>
-
         <Tab>
           <WatchLaterTab />
         </Tab>
-
         <Tab>
           <LikedVideosTab />
         </Tab>
-
         <Tab>
           <ShowMoreTab />
         </Tab>
