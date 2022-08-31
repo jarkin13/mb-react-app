@@ -1,31 +1,18 @@
-.react-tabs__tab {
-  background: black;
-}
-
-.home-nav {
-  position: fixed;
-}
-
-.bg-salmon {
-  background: white;
-  width: 240px;
-  border: none;
-  padding: 0;
-}
-
-.bg-salmon:hover {
+.react-tabs__tab:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-button {
-  border: none;
+.react-tabs__tab {
+  list-style: none;
+  max-width: 240px;
+}
 
+.react-tabs__tab-list {
+  padding: 0;
+}
+
+.react-tabs__tab--selected {
   background-color: rgba(0, 0, 0, 0.2);
-
-  cursor: pointer;
-  min-width: 240px;
-  max-height: 40px;
-  display: flex;
-
-  margin: 0;
+  font-weight: 580;
+  outline: 0;
 }
