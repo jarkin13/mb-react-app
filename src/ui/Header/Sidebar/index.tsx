@@ -12,7 +12,7 @@ import { Tabs, Tab, TabList } from "react-tabs";
 
 import "./styles.css";
 
-export default function curTab() {
+function curTab() {
   return (
     <Tabs>
       <TabList>
@@ -50,3 +50,5 @@ export default function curTab() {
     </Tabs>
   );
 }
+
+export default curTab;
