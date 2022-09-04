@@ -1,16 +1,16 @@
 import Header from "./ui/Header";
+import Sidebar from "./ui/Header/Sidebar";
 import Tags from "./ui/Tags";
-import "./App.css";
+import ActiveHomeIcon from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/icons/activebaricons/activeHome.svg";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header />
-      <div className="filterbar">
-        <Tags />
-      </div>
+      <Tags />
+      <Sidebar />
     </div>
   );
-}
+};
 
 export default App;
