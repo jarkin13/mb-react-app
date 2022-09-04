@@ -1,8 +1,7 @@
 import React from "react";
 import SideTag from "../../../SideTag";
-import "./index.css";
-import { ReactComponent as HistoryIcon } from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/icons/baricons/history.svg";
-import { ReactComponent as ActiveHistoryIcon } from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/icons/activebaricons/activeHistory.svg";
+import { ReactComponent as HistoryIcon } from "../../icons/baricons/history.svg";
+import { ReactComponent as ActiveHistoryIcon } from "../../icons/activebaricons/activeHistory.svg";
 const HistoryTab = () => {
   const [state, setState] = React.useState(<HistoryIcon />);
 

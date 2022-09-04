@@ -1,8 +1,7 @@
 import React from "react";
 import SideTag from "../../../SideTag";
-import "./index.css";
-import { ReactComponent as WatchLaterIcon } from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/icons/baricons/watch-later.svg";
-import { ReactComponent as ActiveWatchLaterIcon } from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/icons/activebaricons/activeWatchLater.svg";
+import { ReactComponent as WatchLaterIcon } from "../../icons/watch-later.svg";
+import { ReactComponent as ActiveWatchLaterIcon } from "../../icons/activebaricons/activeWatchLater.svg";
 
 const WatchLaterTab = () => {
   const [state, setState] = React.useState(<WatchLaterIcon />);

@@ -1,8 +1,8 @@
 import React from "react";
 import SideTag from "../../../SideTag";
-import "./index.css";
-import { ReactComponent as LibraryIcon } from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/icons/baricons/library.svg";
-import { ReactComponent as ActiveLibraryIcon } from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/icons/activebaricons/activeLibrary.svg";
+
+import { ReactComponent as LibraryIcon } from "../../icons/baricons/library.svg";
+import { ReactComponent as ActiveLibraryIcon } from "../../icons/activebaricons/activeLibrary.svg";
 
 const LibraryTab = () => {
   const [state, setState] = React.useState(<LibraryIcon />);

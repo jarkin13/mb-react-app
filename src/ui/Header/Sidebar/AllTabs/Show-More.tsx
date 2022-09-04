@@ -1,8 +1,7 @@
 import React from "react";
 import SideTag from "../../../SideTag";
-import "./index.css";
-import { ReactComponent as ShowMoreIcon } from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/icons/baricons/show-more.svg";
-import { ReactComponent as ActiveShowMoreIcon } from "C:/Users/mikey-pc/Workspace/mb-react-app/src/ui/Header/icons/activebaricons/activeShowMore.svg";
+import { ReactComponent as ShowMoreIcon } from "../../icons/baricons/show-more.svg";
+import { ReactComponent as ActiveShowMoreIcon } from "../../icons/activebaricons/activeShowMore.svg";
 
 const ShowMoreTab = () => {
   const [state, setState] = React.useState(<ShowMoreIcon />);

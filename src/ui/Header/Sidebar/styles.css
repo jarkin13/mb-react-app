@@ -16,3 +16,26 @@
   font-weight: 580;
   outline: 0;
 }
+
+.sidebar-link {
+  max-width: 240px;
+}
+
+.LinkContent {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  max-height: 40px;
+}
+
+.sidebarIconColumn {
+  height: 24px;
+  width: 24px;
+  padding-left: 24px;
+}
+
+.sidebar-link p {
+  padding: 0px 24px;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
