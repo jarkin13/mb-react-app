@@ -1,0 +1,19 @@
+.icon {
+  height: 24px;
+  width: 24px;
+  border: none;
+}
+
+.Tabs {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  max-height: 40px;
+  max-width: 240px;
+  padding-left: none;
+}
+
+.Tabs p {
+  padding: 0 14px;
+}
