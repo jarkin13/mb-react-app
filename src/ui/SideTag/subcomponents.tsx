@@ -17,7 +17,7 @@ export const SidebarSelector = styled.div<SidebarSelectorProps>`
       return `
     &:hover {
       background-color: rgba(0, 0, 0, 0.1);
-    }`;
+      }`;
     }
   }}
 `;
