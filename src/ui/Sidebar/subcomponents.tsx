@@ -22,4 +22,8 @@ export const Textstyle = styled.p`
   }
 `;
 
-export const SideBarBox = styled.div``;
+export const ActiveTab = styled.div`
+  & .Home {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+`;

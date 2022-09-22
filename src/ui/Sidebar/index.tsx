@@ -1,5 +1,4 @@
-import { useState, ReactElement } from "react";
-import SidebarTab from "./SidebarTab";
+import { useState } from "react";
 import { ReactComponent as ExploreIcon } from "./SideBarIcons/explore.svg";
 import { ReactComponent as HistoryIcon } from "./SideBarIcons/history.svg";
 import { ReactComponent as HomeIcon } from "./SideBarIcons/Home.svg";
@@ -19,7 +18,7 @@ import { ReactComponent as ActiveShortsIcon } from "./SideBarIcons/activeshorts.
 import { ReactComponent as ActiveShowMoreIcon } from "./SideBarIcons/activeshowmore.svg";
 import { ReactComponent as ActiveSubscriptionsIcon } from "./SideBarIcons/activesubscriptions.svg";
 import { ReactComponent as ActiveWatchLaterIcon } from "./SideBarIcons/activewatchlater.svg";
-import { Icons, SideBarBox, Textstyle } from "./subcomponents";
+import { Icons, Textstyle, ActiveTab } from "./subcomponents";
 
 function ActiveSidebar() {
   const [home, setHome] = useState(() => <HomeIcon />);
@@ -36,82 +35,150 @@ function ActiveSidebar() {
 
   function SetHomeTab() {
     setHome(() => <ActiveHomeIcon />);
+    setExplore(() => <ExploreIcon />);
+    setShorts(() => <ShortsIcon />);
+    setSubscriptions(() => <SubscriptionsIcon />);
+    setLibrary(() => <LibraryIcon />);
+    setHistory(() => <HistoryIcon />);
+    setWatchLater(() => <WatchLaterIcon />);
+    setLikedVideos(() => <LikedVideosIcon />);
+    setShowMore(() => <ShowMoreIcon />);
   }
-
   function SetExploreTab() {
     setExplore(() => <ActiveExploreIcon />);
+    setHome(() => <HomeIcon />);
+    setShorts(() => <ShortsIcon />);
+    setSubscriptions(() => <SubscriptionsIcon />);
+    setLibrary(() => <LibraryIcon />);
+    setHistory(() => <HistoryIcon />);
+    setWatchLater(() => <WatchLaterIcon />);
+    setLikedVideos(() => <LikedVideosIcon />);
+    setShowMore(() => <ShowMoreIcon />);
   }
-
   function SetShortsTab() {
     setShorts(() => <ActiveShortsIcon />);
+    setExplore(() => <ExploreIcon />);
+    setHome(() => <HomeIcon />);
+    setSubscriptions(() => <SubscriptionsIcon />);
+    setLibrary(() => <LibraryIcon />);
+    setHistory(() => <HistoryIcon />);
+    setWatchLater(() => <WatchLaterIcon />);
+    setLikedVideos(() => <LikedVideosIcon />);
+    setShowMore(() => <ShowMoreIcon />);
   }
-
   function SetSubscriptionsTab() {
     setSubscriptions(() => <ActiveSubscriptionsIcon />);
+    setExplore(() => <ExploreIcon />);
+    setShorts(() => <ShortsIcon />);
+    setHome(() => <HomeIcon />);
+    setLibrary(() => <LibraryIcon />);
+    setHistory(() => <HistoryIcon />);
+    setWatchLater(() => <WatchLaterIcon />);
+    setLikedVideos(() => <LikedVideosIcon />);
+    setShowMore(() => <ShowMoreIcon />);
   }
-
   function SetLibraryTab() {
     setLibrary(() => <ActiveLibraryIcon />);
+    setExplore(() => <ExploreIcon />);
+    setShorts(() => <ShortsIcon />);
+    setSubscriptions(() => <SubscriptionsIcon />);
+    setHome(() => <HomeIcon />);
+    setHistory(() => <HistoryIcon />);
+    setWatchLater(() => <WatchLaterIcon />);
+    setLikedVideos(() => <LikedVideosIcon />);
+    setShowMore(() => <ShowMoreIcon />);
   }
-
   function SetHistoryTab() {
     setHistory(() => <ActiveHistoryIcon />);
+    setExplore(() => <ExploreIcon />);
+    setShorts(() => <ShortsIcon />);
+    setSubscriptions(() => <SubscriptionsIcon />);
+    setLibrary(() => <LibraryIcon />);
+    setHome(() => <HomeIcon />);
+    setWatchLater(() => <WatchLaterIcon />);
+    setLikedVideos(() => <LikedVideosIcon />);
+    setShowMore(() => <ShowMoreIcon />);
   }
-
   function SetWatchLaterTab() {
     setWatchLater(() => <ActiveWatchLaterIcon />);
+    setExplore(() => <ExploreIcon />);
+    setShorts(() => <ShortsIcon />);
+    setSubscriptions(() => <SubscriptionsIcon />);
+    setLibrary(() => <LibraryIcon />);
+    setHistory(() => <HistoryIcon />);
+    setHome(() => <HomeIcon />);
+    setLikedVideos(() => <LikedVideosIcon />);
+    setShowMore(() => <ShowMoreIcon />);
   }
-
   function SetLikedVideosTab() {
     setLikedVideos(() => <ActiveLikedVideosIcon />);
+    setExplore(() => <ExploreIcon />);
+    setShorts(() => <ShortsIcon />);
+    setSubscriptions(() => <SubscriptionsIcon />);
+    setLibrary(() => <LibraryIcon />);
+    setHistory(() => <HistoryIcon />);
+    setWatchLater(() => <WatchLaterIcon />);
+    setHome(() => <HomeIcon />);
+    setShowMore(() => <ShowMoreIcon />);
   }
-
   function SetShowMoreTab() {
     setShowMore(() => <ActiveShowMoreIcon />);
+    setExplore(() => <ExploreIcon />);
+    setShorts(() => <ShortsIcon />);
+    setSubscriptions(() => <SubscriptionsIcon />);
+    setLibrary(() => <LibraryIcon />);
+    setHistory(() => <HistoryIcon />);
+    setWatchLater(() => <WatchLaterIcon />);
+    setLikedVideos(() => <LikedVideosIcon />);
+    setHome(() => <HomeIcon />);
   }
 
   return (
     <div>
-      <SideBarBox>
+      <div>
         <Icons>{home}</Icons>
-        <Textstyle onClick={SetHomeTab}>Home</Textstyle>
-      </SideBarBox>
-      <SideBarBox>
+        <Textstyle className="Home" onClick={SetHomeTab}>
+          Home
+        </Textstyle>
+      </div>
+      <div>
         <Icons>{explore}</Icons>
         <Textstyle onClick={SetExploreTab}>Explore</Textstyle>
-      </SideBarBox>
-      <SideBarBox>
+      </div>
+      <div>
         <Icons>{shorts}</Icons>
         <Textstyle onClick={SetShortsTab}>Shorts</Textstyle>
-      </SideBarBox>
-      <SideBarBox>
+      </div>
+      <div>
         <Icons>{subscriptions}</Icons>
         <Textstyle onClick={SetSubscriptionsTab}>Subscriptions</Textstyle>
-      </SideBarBox>
-      <SideBarBox>
+      </div>
+      <div>
         <Icons>{library}</Icons>
         <Textstyle onClick={SetLibraryTab}>Library</Textstyle>
-      </SideBarBox>
-      <SideBarBox>
+      </div>
+      <div>
         <Icons>{history}</Icons>
         <Textstyle onClick={SetHistoryTab}>History</Textstyle>
-      </SideBarBox>
-      <SideBarBox>
-        <Icons>{yourvideos}</Icons>
+      </div>
+      <div>
+        <Icons>
+          <YourVideosIcon />
+        </Icons>
         <Textstyle>Your Videos</Textstyle>
-      </SideBarBox>
-      <SideBarBox>
+      </div>
+      <div>
         <Icons>{watchlater}</Icons>
         <Textstyle onClick={SetWatchLaterTab}>Watch Later</Textstyle>
-      </SideBarBox>
-      <SideBarBox>
+      </div>
+      <div>
         <Icons>{likedvideos}</Icons>
         <Textstyle onClick={SetLikedVideosTab}>Liked Videos</Textstyle>
-      </SideBarBox>
-      <SideBarBox>
+      </div>
+      <div>
         <Icons>{showmore}</Icons>
         <Textstyle onClick={SetShowMoreTab}>Show More</Textstyle>
-      </SideBarBox>
+      </div>
     </div>
   );
 }

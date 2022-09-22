@@ -1,8 +1,8 @@
 import SideTag from "../SideTag";
 
 interface SidebarTabProps {
-  setActiveTab: (tab: string) => void;
-  text: string;
+  setActiveTab: (tab: any) => void;
+  text: any;
 }
 
 const SidebarTab = ({ setActiveTab, text }: SidebarTabProps) => {
