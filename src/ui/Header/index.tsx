@@ -7,15 +7,14 @@ import { ReactComponent as MicIcon } from "./icons/mic.svg";
 import { ReactComponent as LogoIcon } from "./icons/logo.svg";
 import userIcon from "./icons/user-icon.jpg";
 import "./index.css";
+import Sidebar from "../Sidebar";
 
 const Header = () => {
   const [menuShow, setMenuShow] = useState(false);
   const [notificationsShow, setNotificationsShow] = useState(false);
   const [userMenuShow, setUserMenuShow] = useState(false);
 
-  const onMenuClick = () => {
-    setMenuShow(!menuShow);
-  };
+  const onMenuClick = () => {};
 
   const onNotificationsClick = () => {
     setNotificationsShow(!notificationsShow);

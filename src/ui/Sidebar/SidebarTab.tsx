@@ -1,13 +1,13 @@
 import SideTag from "../SideTag";
 
 interface SidebarTabProps {
-  setActiveTab: (tab: any) => void;
-  text: any;
+  SetActiveTab: (tab: string) => void;
+  text: string;
 }
 
-const SidebarTab = ({ setActiveTab, text }: SidebarTabProps) => {
+const SidebarTab = ({ SetActiveTab, text }: SidebarTabProps) => {
   return (
-    <div onClick={() => setActiveTab} className="sidebar-link LinkContent">
+    <div onClick={() => SetActiveTab} className="sidebar-link LinkContent">
       <SideTag text={text} active={false} />
     </div>
   );

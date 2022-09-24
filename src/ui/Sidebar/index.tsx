@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { MouseEvent, useState } from "react";
 import { ReactComponent as ExploreIcon } from "./SideBarIcons/explore.svg";
 import { ReactComponent as HistoryIcon } from "./SideBarIcons/history.svg";
 import { ReactComponent as HomeIcon } from "./SideBarIcons/Home.svg";
@@ -18,7 +18,8 @@ import { ReactComponent as ActiveShortsIcon } from "./SideBarIcons/activeshorts.
 import { ReactComponent as ActiveShowMoreIcon } from "./SideBarIcons/activeshowmore.svg";
 import { ReactComponent as ActiveSubscriptionsIcon } from "./SideBarIcons/activesubscriptions.svg";
 import { ReactComponent as ActiveWatchLaterIcon } from "./SideBarIcons/activewatchlater.svg";
-import { Icons, Textstyle, ActiveTab } from "./subcomponents";
+import { Icons, Textstyle } from "./subcomponents";
+import SidebarTab from "./SidebarTab";
 
 function ActiveSidebar() {
   const [home, setHome] = useState(() => <HomeIcon />);
@@ -135,31 +136,59 @@ function ActiveSidebar() {
 
   return (
     <div>
-      <div>
+      <div onClick={SetHomeTab}>
         <Icons>{home}</Icons>
-        <Textstyle className="Home" onClick={SetHomeTab}>
-          Home
-        </Textstyle>
+        <SidebarTab
+          text="Home"
+          SetActiveTab={function (tab: string): void {
+            throw new Error("Function not implemented.");
+          }}
+        ></SidebarTab>
       </div>
-      <div>
+      <div onClick={SetExploreTab}>
         <Icons>{explore}</Icons>
-        <Textstyle onClick={SetExploreTab}>Explore</Textstyle>
+        <SidebarTab
+          text="Explore"
+          SetActiveTab={function (tab: string): void {
+            throw new Error("Function not implemented.");
+          }}
+        ></SidebarTab>
       </div>
-      <div>
+      <div onClick={SetShortsTab}>
         <Icons>{shorts}</Icons>
-        <Textstyle onClick={SetShortsTab}>Shorts</Textstyle>
+        <SidebarTab
+          text="Shorts"
+          SetActiveTab={function (tab: string): void {
+            throw new Error("Function not implemented.");
+          }}
+        ></SidebarTab>
       </div>
-      <div>
+      <div onClick={SetSubscriptionsTab}>
         <Icons>{subscriptions}</Icons>
-        <Textstyle onClick={SetSubscriptionsTab}>Subscriptions</Textstyle>
+        <SidebarTab
+          text="Subscriptions"
+          SetActiveTab={function (tab: string): void {
+            throw new Error("Function not implemented.");
+          }}
+        ></SidebarTab>
       </div>
-      <div>
+      <div onClick={SetLibraryTab}>
         <Icons>{library}</Icons>
-        <Textstyle onClick={SetLibraryTab}>Library</Textstyle>
+        <SidebarTab
+          text="Library"
+          SetActiveTab={function (tab: string): void {
+            throw new Error("Function not implemented.");
+          }}
+        ></SidebarTab>
       </div>
-      <div>
+      <div onClick={SetHistoryTab}>
         <Icons>{history}</Icons>
-        <Textstyle onClick={SetHistoryTab}>History</Textstyle>
+        <SidebarTab
+          text="History"
+          SetActiveTab={function (tab: string): void {
+            throw new Error("Function not implemented.");
+          }}
+        ></SidebarTab>
       </div>
       <div>
         <Icons>
@@ -167,17 +196,32 @@ function ActiveSidebar() {
         </Icons>
         <Textstyle>Your Videos</Textstyle>
       </div>
-      <div>
+      <div onClick={SetWatchLaterTab}>
         <Icons>{watchlater}</Icons>
-        <Textstyle onClick={SetWatchLaterTab}>Watch Later</Textstyle>
+        <SidebarTab
+          text="Watch Later"
+          SetActiveTab={function (tab: string): void {
+            throw new Error("Function not implemented.");
+          }}
+        ></SidebarTab>
       </div>
-      <div>
+      <div onClick={SetLikedVideosTab}>
         <Icons>{likedvideos}</Icons>
-        <Textstyle onClick={SetLikedVideosTab}>Liked Videos</Textstyle>
+        <SidebarTab
+          text="Liked Videos"
+          SetActiveTab={function (tab: string): void {
+            throw new Error("Function not implemented.");
+          }}
+        ></SidebarTab>
       </div>
-      <div>
+      <div onClick={SetShowMoreTab}>
         <Icons>{showmore}</Icons>
-        <Textstyle onClick={SetShowMoreTab}>Show More</Textstyle>
+        <SidebarTab
+          text="Show More"
+          SetActiveTab={function (tab: string): void {
+            throw new Error("Function not implemented.");
+          }}
+        ></SidebarTab>
       </div>
     </div>
   );
