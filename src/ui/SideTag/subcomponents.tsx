@@ -4,9 +4,15 @@ interface SidebarSelectorProps {
 }
 
 const activeSidebarStyles = css`
-background-color: #030303
-border-color: #030303
-color: #fff;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-left: 74px;
+  height: 40px;
+  width: 240px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 `;
 
 export const SidebarSelector = styled.div<SidebarSelectorProps>`

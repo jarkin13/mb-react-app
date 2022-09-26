@@ -1,14 +1,18 @@
+import { text } from "stream/consumers";
 import SideTag from "../SideTag";
 
 interface SidebarTabProps {
-  SetActiveTab: (tab: string) => void;
+  SetActiveTab: () => void;
   text: string;
+  active: any;
 }
 
-const SidebarTab = ({ SetActiveTab, text }: SidebarTabProps) => {
+function TabSelect() {}
+
+const SidebarTab = ({ SetActiveTab, text, active }: SidebarTabProps) => {
   return (
     <div onClick={() => SetActiveTab} className="sidebar-link LinkContent">
-      <SideTag text={text} active={false} />
+      <SideTag text={text} active={active} />
     </div>
   );
 };

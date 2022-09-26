@@ -22,6 +22,15 @@ import { Icons, Textstyle } from "./subcomponents";
 import SidebarTab from "./SidebarTab";
 
 function ActiveSidebar() {
+  const [homeActive, setHomeActive] = useState(false);
+  const [historyActive, setHistoryActive] = useState(false);
+  const [exploreActive, setExploreActive] = useState(false);
+  const [libraryActive, setLibraryActive] = useState(false);
+  const [likedvideosActive, setLikedVideosActive] = useState(false);
+  const [shortsActive, setShortsActive] = useState(false);
+  const [showmoreActive, setShowMoreActive] = useState(false);
+  const [watchlaterActive, setWatchLaterActive] = useState(false);
+  const [subscriptionsActive, setSubscriptionsActive] = useState(false);
   const [home, setHome] = useState(() => <HomeIcon />);
   const [history, setHistory] = useState(() => <HistoryIcon />);
   const [explore, setExplore] = useState(() => <ExploreIcon />);
@@ -36,6 +45,7 @@ function ActiveSidebar() {
 
   function SetHomeTab() {
     setHome(() => <ActiveHomeIcon />);
+    setActiveStateHome();
     setExplore(() => <ExploreIcon />);
     setShorts(() => <ShortsIcon />);
     setSubscriptions(() => <SubscriptionsIcon />);
@@ -47,6 +57,7 @@ function ActiveSidebar() {
   }
   function SetExploreTab() {
     setExplore(() => <ActiveExploreIcon />);
+    setActiveStateExplore();
     setHome(() => <HomeIcon />);
     setShorts(() => <ShortsIcon />);
     setSubscriptions(() => <SubscriptionsIcon />);
@@ -58,6 +69,7 @@ function ActiveSidebar() {
   }
   function SetShortsTab() {
     setShorts(() => <ActiveShortsIcon />);
+    setActiveStateShorts();
     setExplore(() => <ExploreIcon />);
     setHome(() => <HomeIcon />);
     setSubscriptions(() => <SubscriptionsIcon />);
@@ -69,6 +81,7 @@ function ActiveSidebar() {
   }
   function SetSubscriptionsTab() {
     setSubscriptions(() => <ActiveSubscriptionsIcon />);
+    setActiveStateSubscriptions();
     setExplore(() => <ExploreIcon />);
     setShorts(() => <ShortsIcon />);
     setHome(() => <HomeIcon />);
@@ -80,6 +93,7 @@ function ActiveSidebar() {
   }
   function SetLibraryTab() {
     setLibrary(() => <ActiveLibraryIcon />);
+    setActiveStateLibrary();
     setExplore(() => <ExploreIcon />);
     setShorts(() => <ShortsIcon />);
     setSubscriptions(() => <SubscriptionsIcon />);
@@ -91,6 +105,7 @@ function ActiveSidebar() {
   }
   function SetHistoryTab() {
     setHistory(() => <ActiveHistoryIcon />);
+    setActiveStateHistory();
     setExplore(() => <ExploreIcon />);
     setShorts(() => <ShortsIcon />);
     setSubscriptions(() => <SubscriptionsIcon />);
@@ -102,6 +117,7 @@ function ActiveSidebar() {
   }
   function SetWatchLaterTab() {
     setWatchLater(() => <ActiveWatchLaterIcon />);
+    setActiveStateWatchLater();
     setExplore(() => <ExploreIcon />);
     setShorts(() => <ShortsIcon />);
     setSubscriptions(() => <SubscriptionsIcon />);
@@ -113,6 +129,7 @@ function ActiveSidebar() {
   }
   function SetLikedVideosTab() {
     setLikedVideos(() => <ActiveLikedVideosIcon />);
+    setActiveStateLikedVideos();
     setExplore(() => <ExploreIcon />);
     setShorts(() => <ShortsIcon />);
     setSubscriptions(() => <SubscriptionsIcon />);
@@ -124,6 +141,7 @@ function ActiveSidebar() {
   }
   function SetShowMoreTab() {
     setShowMore(() => <ActiveShowMoreIcon />);
+    setActiveStateShowMore();
     setExplore(() => <ExploreIcon />);
     setShorts(() => <ShortsIcon />);
     setSubscriptions(() => <SubscriptionsIcon />);
@@ -134,58 +152,163 @@ function ActiveSidebar() {
     setHome(() => <HomeIcon />);
   }
 
+  function setActiveStateHome() {
+    setHomeActive(true);
+    setExploreActive(false);
+    setShortsActive(false);
+    setSubscriptionsActive(false);
+    setLibraryActive(false);
+    setHistoryActive(false);
+    setWatchLaterActive(false);
+    setLikedVideosActive(false);
+    setShowMoreActive(false);
+  }
+  function setActiveStateExplore() {
+    setExploreActive(true);
+    setHomeActive(false);
+    setShortsActive(false);
+    setSubscriptionsActive(false);
+    setLibraryActive(false);
+    setHistoryActive(false);
+    setWatchLaterActive(false);
+    setLikedVideosActive(false);
+    setShowMoreActive(false);
+  }
+  function setActiveStateShorts() {
+    setShortsActive(true);
+    setExploreActive(false);
+    setHomeActive(false);
+    setSubscriptionsActive(false);
+    setLibraryActive(false);
+    setHistoryActive(false);
+    setWatchLaterActive(false);
+    setLikedVideosActive(false);
+    setShowMoreActive(false);
+  }
+  function setActiveStateSubscriptions() {
+    setSubscriptionsActive(true);
+    setExploreActive(false);
+    setShortsActive(false);
+    setHomeActive(false);
+    setLibraryActive(false);
+    setHistoryActive(false);
+    setWatchLaterActive(false);
+    setLikedVideosActive(false);
+    setShowMoreActive(false);
+  }
+  function setActiveStateLibrary() {
+    setLibraryActive(true);
+    setExploreActive(false);
+    setShortsActive(false);
+    setSubscriptionsActive(false);
+    setHomeActive(false);
+    setHistoryActive(false);
+    setWatchLaterActive(false);
+    setLikedVideosActive(false);
+    setShowMoreActive(false);
+  }
+  function setActiveStateHistory() {
+    setHistoryActive(true);
+    setExploreActive(false);
+    setShortsActive(false);
+    setSubscriptionsActive(false);
+    setLibraryActive(false);
+    setHomeActive(false);
+    setWatchLaterActive(false);
+    setLikedVideosActive(false);
+    setShowMoreActive(false);
+  }
+  function setActiveStateWatchLater() {
+    setWatchLaterActive(true);
+    setExploreActive(false);
+    setShortsActive(false);
+    setSubscriptionsActive(false);
+    setLibraryActive(false);
+    setHistoryActive(false);
+    setHomeActive(false);
+    setLikedVideosActive(false);
+    setShowMoreActive(false);
+  }
+  function setActiveStateLikedVideos() {
+    setLikedVideosActive(true);
+    setExploreActive(false);
+    setShortsActive(false);
+    setSubscriptionsActive(false);
+    setLibraryActive(false);
+    setHistoryActive(false);
+    setWatchLaterActive(false);
+    setHomeActive(false);
+    setShowMoreActive(false);
+  }
+  function setActiveStateShowMore() {
+    setShowMoreActive(true);
+    setExploreActive(false);
+    setShortsActive(false);
+    setSubscriptionsActive(false);
+    setLibraryActive(false);
+    setHistoryActive(false);
+    setWatchLaterActive(false);
+    setLikedVideosActive(false);
+    setHomeActive(false);
+  }
   return (
     <div>
-      <div onClick={SetHomeTab}>
+      <div className="Home" onClick={SetHomeTab}>
         <Icons>{home}</Icons>
         <SidebarTab
           text="Home"
-          SetActiveTab={function (tab: string): void {
+          active={homeActive}
+          SetActiveTab={function (): void {
             throw new Error("Function not implemented.");
           }}
         ></SidebarTab>
       </div>
-      <div onClick={SetExploreTab}>
+      <div className="Explore" onClick={SetExploreTab}>
         <Icons>{explore}</Icons>
         <SidebarTab
           text="Explore"
-          SetActiveTab={function (tab: string): void {
+          active={exploreActive}
+          SetActiveTab={function (): void {
             throw new Error("Function not implemented.");
           }}
         ></SidebarTab>
       </div>
-      <div onClick={SetShortsTab}>
+      <div className="Shorts" onClick={SetShortsTab}>
         <Icons>{shorts}</Icons>
         <SidebarTab
           text="Shorts"
-          SetActiveTab={function (tab: string): void {
+          active={shortsActive}
+          SetActiveTab={function (): void {
             throw new Error("Function not implemented.");
           }}
         ></SidebarTab>
       </div>
-      <div onClick={SetSubscriptionsTab}>
+      <div className="Subscriptions" onClick={SetSubscriptionsTab}>
         <Icons>{subscriptions}</Icons>
         <SidebarTab
           text="Subscriptions"
-          SetActiveTab={function (tab: string): void {
+          active={subscriptionsActive}
+          SetActiveTab={function (): void {
             throw new Error("Function not implemented.");
           }}
         ></SidebarTab>
       </div>
-      <div onClick={SetLibraryTab}>
+      <div className="Library" onClick={SetLibraryTab}>
         <Icons>{library}</Icons>
         <SidebarTab
           text="Library"
-          SetActiveTab={function (tab: string): void {
+          active={libraryActive}
+          SetActiveTab={function (): void {
             throw new Error("Function not implemented.");
           }}
         ></SidebarTab>
       </div>
-      <div onClick={SetHistoryTab}>
+      <div className="History" onClick={SetHistoryTab}>
         <Icons>{history}</Icons>
         <SidebarTab
           text="History"
-          SetActiveTab={function (tab: string): void {
+          active={historyActive}
+          SetActiveTab={function (): void {
             throw new Error("Function not implemented.");
           }}
         ></SidebarTab>
@@ -196,29 +319,32 @@ function ActiveSidebar() {
         </Icons>
         <Textstyle>Your Videos</Textstyle>
       </div>
-      <div onClick={SetWatchLaterTab}>
+      <div className="Watch-Later" onClick={SetWatchLaterTab}>
         <Icons>{watchlater}</Icons>
         <SidebarTab
           text="Watch Later"
-          SetActiveTab={function (tab: string): void {
+          active={watchlaterActive}
+          SetActiveTab={function (): void {
             throw new Error("Function not implemented.");
           }}
         ></SidebarTab>
       </div>
-      <div onClick={SetLikedVideosTab}>
+      <div className="Liked-Videos" onClick={SetLikedVideosTab}>
         <Icons>{likedvideos}</Icons>
         <SidebarTab
           text="Liked Videos"
-          SetActiveTab={function (tab: string): void {
+          active={likedvideosActive}
+          SetActiveTab={function (): void {
             throw new Error("Function not implemented.");
           }}
         ></SidebarTab>
       </div>
-      <div onClick={SetShowMoreTab}>
+      <div className="Show-More" onClick={SetShowMoreTab}>
         <Icons>{showmore}</Icons>
         <SidebarTab
           text="Show More"
-          SetActiveTab={function (tab: string): void {
+          active={showmoreActive}
+          SetActiveTab={function (): void {
             throw new Error("Function not implemented.");
           }}
         ></SidebarTab>

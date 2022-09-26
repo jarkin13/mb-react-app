@@ -21,7 +21,3 @@ export const Textstyle = styled.p`
     background-color: rgba(0, 0, 0, 0.1);
   }
 `;
-
-export const ActiveTab = styled.div`
-  background-color: rgba(0, 0, 0, 0.2);
-`;
