@@ -14,7 +14,9 @@ const Header = () => {
   const [notificationsShow, setNotificationsShow] = useState(false);
   const [userMenuShow, setUserMenuShow] = useState(false);
 
-  const onMenuClick = () => {};
+  const onMenuClick = () => {
+    setMenuShow(!menuShow);
+  };
 
   const onNotificationsClick = () => {
     setNotificationsShow(!notificationsShow);
@@ -29,7 +31,7 @@ const Header = () => {
         <div className="menu" onClick={onMenuClick}>
           <div className="icon">
             <MenuIcon />
-            {menuShow && <div className="menu-nav">This is the Menu.</div>}
+            {menuShow && <div className="menu-nav"></div>}
           </div>
         </div>
         <div className="logo">

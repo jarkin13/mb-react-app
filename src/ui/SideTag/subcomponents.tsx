@@ -4,11 +4,11 @@ interface SidebarSelectorProps {
 }
 
 const activeSidebarStyles = css`
-  font-weight: 500;
+  font-weight: 550;
   background-color: rgba(0, 0, 0, 0.2);
   padding-left: 74px;
   height: 40px;
-  width: 240px;
+  width: 166px;
   margin: 0;
   display: flex;
   align-items: center;

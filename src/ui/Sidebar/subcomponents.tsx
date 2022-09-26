@@ -21,3 +21,12 @@ export const Textstyle = styled.p`
     background-color: rgba(0, 0, 0, 0.1);
   }
 `;
+
+export const TopTabPanel = styled.div`
+  padding-bottom: 12px;
+`;
+
+export const TabsClass = styled.div`
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+`;

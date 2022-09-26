@@ -18,9 +18,9 @@ import { ReactComponent as ActiveShortsIcon } from "./SideBarIcons/activeshorts.
 import { ReactComponent as ActiveShowMoreIcon } from "./SideBarIcons/activeshowmore.svg";
 import { ReactComponent as ActiveSubscriptionsIcon } from "./SideBarIcons/activesubscriptions.svg";
 import { ReactComponent as ActiveWatchLaterIcon } from "./SideBarIcons/activewatchlater.svg";
-import { Icons, Textstyle } from "./subcomponents";
+import { Icons, TabsClass, Textstyle, TopTabPanel } from "./subcomponents";
 import SidebarTab from "./SidebarTab";
-import "./index.css";
+import "../Header/index.css";
 
 function ActiveSidebar() {
   const [homeActive, setHomeActive] = useState(true);
@@ -254,8 +254,8 @@ function ActiveSidebar() {
   }
   return (
     <div>
-      <div className="topTabPanel">
-        <div className="TabsClass" onClick={SetHomeTab}>
+      <TopTabPanel>
+        <TabsClass onClick={SetHomeTab}>
           <Icons>{home}</Icons>
           <SidebarTab
             text="Home"
@@ -264,8 +264,8 @@ function ActiveSidebar() {
               throw new Error("Function not implemented.");
             }}
           ></SidebarTab>
-        </div>
-        <div className="TabsClass" onClick={SetExploreTab}>
+        </TabsClass>
+        <TabsClass onClick={SetExploreTab}>
           <Icons>{explore}</Icons>
           <SidebarTab
             text="Explore"
@@ -274,8 +274,8 @@ function ActiveSidebar() {
               throw new Error("Function not implemented.");
             }}
           ></SidebarTab>
-        </div>
-        <div className="TabsClass" onClick={SetShortsTab}>
+        </TabsClass>
+        <TabsClass onClick={SetShortsTab}>
           <Icons>{shorts}</Icons>
           <SidebarTab
             text="Shorts"
@@ -284,8 +284,8 @@ function ActiveSidebar() {
               throw new Error("Function not implemented.");
             }}
           ></SidebarTab>
-        </div>
-        <div className="TabsClass" onClick={SetSubscriptionsTab}>
+        </TabsClass>
+        <TabsClass onClick={SetSubscriptionsTab}>
           <Icons>{subscriptions}</Icons>
           <SidebarTab
             text="Subscriptions"
@@ -294,10 +294,10 @@ function ActiveSidebar() {
               throw new Error("Function not implemented.");
             }}
           ></SidebarTab>
-        </div>
-      </div>
+        </TabsClass>
+      </TopTabPanel>
       <hr></hr>
-      <div className="TabsClass" onClick={SetLibraryTab}>
+      <TabsClass onClick={SetLibraryTab}>
         <Icons>{library}</Icons>
         <SidebarTab
           text="Library"
@@ -306,8 +306,8 @@ function ActiveSidebar() {
             throw new Error("Function not implemented.");
           }}
         ></SidebarTab>
-      </div>
-      <div className="TabsClass" onClick={SetHistoryTab}>
+      </TabsClass>
+      <TabsClass onClick={SetHistoryTab}>
         <Icons>{history}</Icons>
         <SidebarTab
           text="History"
@@ -316,14 +316,14 @@ function ActiveSidebar() {
             throw new Error("Function not implemented.");
           }}
         ></SidebarTab>
-      </div>
-      <div className="TabsClass">
+      </TabsClass>
+      <TabsClass>
         <Icons>
           <YourVideosIcon />
         </Icons>
         <Textstyle>Your Videos</Textstyle>
-      </div>
-      <div className="TabsClass" onClick={SetWatchLaterTab}>
+      </TabsClass>
+      <TabsClass onClick={SetWatchLaterTab}>
         <Icons>{watchlater}</Icons>
         <SidebarTab
           text="Watch Later"
@@ -332,8 +332,8 @@ function ActiveSidebar() {
             throw new Error("Function not implemented.");
           }}
         ></SidebarTab>
-      </div>
-      <div className="TabsClass" onClick={SetLikedVideosTab}>
+      </TabsClass>
+      <TabsClass onClick={SetLikedVideosTab}>
         <Icons>{likedvideos}</Icons>
         <SidebarTab
           text="Liked Videos"
@@ -342,8 +342,8 @@ function ActiveSidebar() {
             throw new Error("Function not implemented.");
           }}
         ></SidebarTab>
-      </div>
-      <div className="TabsClass" onClick={SetShowMoreTab}>
+      </TabsClass>
+      <TabsClass onClick={SetShowMoreTab}>
         <Icons>{showmore}</Icons>
         <SidebarTab
           text="Show More"
@@ -352,7 +352,7 @@ function ActiveSidebar() {
             throw new Error("Function not implemented.");
           }}
         ></SidebarTab>
-      </div>
+      </TabsClass>
     </div>
   );
 }
