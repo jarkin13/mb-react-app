@@ -1,0 +1,14 @@
+hr {
+  width: 240px;
+  margin: 0;
+  padding-bottom: 12px;
+}
+
+.TabsClass p {
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+}
+
+.topTabPanel {
+  padding-bottom: 12px;
+}

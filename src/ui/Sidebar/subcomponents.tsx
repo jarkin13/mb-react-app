@@ -12,7 +12,7 @@ export const Icons = styled.div`
 export const Textstyle = styled.p`
   padding-left: 74px;
   height: 40px;
-  width: 240px;
+  width: 166px;
   margin: 0;
   display: flex;
   align-items: center;
