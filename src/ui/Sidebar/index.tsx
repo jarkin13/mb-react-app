@@ -253,69 +253,36 @@ function ActiveSidebar() {
     setHomeActive(false);
   }
   return (
-    <div>
+    <div className="SidebarAll">
       <TopTabPanel>
         <TabsClass onClick={SetHomeTab}>
           <Icons>{home}</Icons>
-          <SidebarTab
-            text="Home"
-            active={homeActive}
-            SetActiveTab={function (): void {
-              throw new Error("Function not implemented.");
-            }}
-          ></SidebarTab>
+          <SidebarTab text="Home" active={homeActive}></SidebarTab>
         </TabsClass>
         <TabsClass onClick={SetExploreTab}>
           <Icons>{explore}</Icons>
-          <SidebarTab
-            text="Explore"
-            active={exploreActive}
-            SetActiveTab={function (): void {
-              throw new Error("Function not implemented.");
-            }}
-          ></SidebarTab>
+          <SidebarTab text="Explore" active={exploreActive}></SidebarTab>
         </TabsClass>
         <TabsClass onClick={SetShortsTab}>
           <Icons>{shorts}</Icons>
-          <SidebarTab
-            text="Shorts"
-            active={shortsActive}
-            SetActiveTab={function (): void {
-              throw new Error("Function not implemented.");
-            }}
-          ></SidebarTab>
+          <SidebarTab text="Shorts" active={shortsActive}></SidebarTab>
         </TabsClass>
         <TabsClass onClick={SetSubscriptionsTab}>
           <Icons>{subscriptions}</Icons>
           <SidebarTab
             text="Subscriptions"
             active={subscriptionsActive}
-            SetActiveTab={function (): void {
-              throw new Error("Function not implemented.");
-            }}
           ></SidebarTab>
         </TabsClass>
       </TopTabPanel>
       <hr></hr>
       <TabsClass onClick={SetLibraryTab}>
         <Icons>{library}</Icons>
-        <SidebarTab
-          text="Library"
-          active={libraryActive}
-          SetActiveTab={function (): void {
-            throw new Error("Function not implemented.");
-          }}
-        ></SidebarTab>
+        <SidebarTab text="Library" active={libraryActive}></SidebarTab>
       </TabsClass>
       <TabsClass onClick={SetHistoryTab}>
         <Icons>{history}</Icons>
-        <SidebarTab
-          text="History"
-          active={historyActive}
-          SetActiveTab={function (): void {
-            throw new Error("Function not implemented.");
-          }}
-        ></SidebarTab>
+        <SidebarTab text="History" active={historyActive}></SidebarTab>
       </TabsClass>
       <TabsClass>
         <Icons>
@@ -325,33 +292,15 @@ function ActiveSidebar() {
       </TabsClass>
       <TabsClass onClick={SetWatchLaterTab}>
         <Icons>{watchlater}</Icons>
-        <SidebarTab
-          text="Watch Later"
-          active={watchlaterActive}
-          SetActiveTab={function (): void {
-            throw new Error("Function not implemented.");
-          }}
-        ></SidebarTab>
+        <SidebarTab text="Watch Later" active={watchlaterActive}></SidebarTab>
       </TabsClass>
       <TabsClass onClick={SetLikedVideosTab}>
         <Icons>{likedvideos}</Icons>
-        <SidebarTab
-          text="Liked Videos"
-          active={likedvideosActive}
-          SetActiveTab={function (): void {
-            throw new Error("Function not implemented.");
-          }}
-        ></SidebarTab>
+        <SidebarTab text="Liked Videos" active={likedvideosActive}></SidebarTab>
       </TabsClass>
       <TabsClass onClick={SetShowMoreTab}>
         <Icons>{showmore}</Icons>
-        <SidebarTab
-          text="Show More"
-          active={showmoreActive}
-          SetActiveTab={function (): void {
-            throw new Error("Function not implemented.");
-          }}
-        ></SidebarTab>
+        <SidebarTab text="Show More" active={showmoreActive}></SidebarTab>
       </TabsClass>
     </div>
   );
