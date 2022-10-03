@@ -22,7 +22,7 @@ import { Icons, TabsClass, Textstyle, TopTabPanel } from "./subcomponents";
 import SidebarTab from "./SidebarTab";
 import "../Header/index.css";
 
-function ActiveSidebar() {
+function Sidebar() {
   const [homeActive, setHomeActive] = useState(true);
   const [historyActive, setHistoryActive] = useState(false);
   const [exploreActive, setExploreActive] = useState(false);
@@ -306,4 +306,4 @@ function ActiveSidebar() {
   );
 }
 
-export default ActiveSidebar;
+export default Sidebar;
