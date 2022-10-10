@@ -9,6 +9,7 @@ header {
   width: 100%;
   z-index: 3;
   box-sizing: border-box;
+  position: sticky;
 }
 
 .logo {
