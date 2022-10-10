@@ -120,7 +120,7 @@ header {
 hr {
   width: 240px;
   margin: 0;
-  padding-top: 12px;
+  margin-bottom: 12px;
 }
 
 .sidebarall {
