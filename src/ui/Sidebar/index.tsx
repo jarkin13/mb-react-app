@@ -24,11 +24,16 @@ import "../Header/index.css";
 
 function Sidebar() {
   const [activeTab, setActiveTab] = useState("home");
+  const [isShowMore, setShowMoreActive] = useState(false);
 
   function handleClick(tab: string) {
     setActiveTab(tab);
   }
 
+  function handleShowMore() {
+    setShowMoreActive(!isShowMore);
+  }
+  console.log(isShowMore);
   return (
     <div className="sidebarall">
       <TopTabPanel>
@@ -124,14 +129,9 @@ function Sidebar() {
           active={activeTab === "likedVideos"}
         ></SidebarTab>
       </TabsClass>
-      <TabsClass onClick={() => handleClick("showMore")}>
-        <Icons>
-          {activeTab === "showMore" ? <ActiveShowMoreIcon /> : <ShowMoreIcon />}
-        </Icons>
-        <SidebarTab
-          text="Show More"
-          active={activeTab === "showMore"}
-        ></SidebarTab>
+      <TabsClass onClick={handleShowMore}>
+        <Icons>{isShowMore ? <ActiveShowMoreIcon /> : <ShowMoreIcon />}</Icons>
+        <SidebarTab text="Show More" active={false}></SidebarTab>
       </TabsClass>
     </div>
   );

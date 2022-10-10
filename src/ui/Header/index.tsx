@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, MouseEvent } from "react";
 import { ReactComponent as MenuIcon } from "./icons/menu.svg";
 import { ReactComponent as SearchIcon } from "./icons/search.svg";
 import { ReactComponent as VideoCameraIcon } from "./icons/video-camera.svg";
@@ -15,8 +15,9 @@ const Header = () => {
   const [notificationsShow, setNotificationsShow] = useState(false);
   const [userMenuShow, setUserMenuShow] = useState(false);
 
-  const onMenuClick = () => {
+  const onMenuClick = (e: MouseEvent) => {
     setMenuShow(!menuShow);
+    console.log(e);
   };
 
   const onNotificationsClick = () => {
@@ -31,7 +32,7 @@ const Header = () => {
     <header>
       <div className="column column-start">
         <div className="menu">
-          <div className="icon" onClick={onMenuClick}>
+          <div className="icon" onClick={(e) => onMenuClick(e)}>
             <MenuIcon />
           </div>
         </div>
