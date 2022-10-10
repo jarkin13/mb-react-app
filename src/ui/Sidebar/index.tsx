@@ -30,7 +30,7 @@ function Sidebar() {
   }
 
   return (
-    <div className="SidebarAll">
+    <div className="sidebarall">
       <TopTabPanel>
         <TabsClass onClick={() => handleClick("home")}>
           <Icons>

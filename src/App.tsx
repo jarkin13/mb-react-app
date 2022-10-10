@@ -7,7 +7,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Sidebar />
       <div className="filterbar">
         <Tags />
       </div>

@@ -8,6 +8,7 @@ import { ReactComponent as LogoIcon } from "./icons/logo.svg";
 import userIcon from "./icons/user-icon.jpg";
 import "./index.css";
 import Sidebar from "../Sidebar";
+import { SideClass } from "../Sidebar/subcomponents";
 
 const Header = () => {
   const [menuShow, setMenuShow] = useState(false);
@@ -28,12 +29,12 @@ const Header = () => {
   return (
     <header>
       <div className="column column-start">
-        <div className="menu" onClick={onMenuClick}>
-          <div className="icon">
+        <div className="menu">
+          <div className="icon" onClick={onMenuClick}>
             <MenuIcon />
-            {menuShow && <div className="menu-nav"></div>}
           </div>
         </div>
+        <SideClass>{menuShow && <Sidebar />}</SideClass>
         <div className="logo">
           <LogoIcon />
         </div>

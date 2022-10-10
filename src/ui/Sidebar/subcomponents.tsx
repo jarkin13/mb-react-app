@@ -30,3 +30,5 @@ export const TabsClass = styled.div`
   font-size: 14px;
   font-family: Roboto, sans-serif;
 `;
+
+export const SideClass = styled.p``;
