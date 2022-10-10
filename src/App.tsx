@@ -1,13 +1,10 @@
 import Header from "./ui/Header";
 import Tags from "./ui/Tags";
-import "./App.css";
-import Sidebar from "./ui/Sidebar";
 
 const App = () => {
   return (
     <div className="App">
       <Header />
-      <Sidebar />
       <div className="filterbar">
         <Tags />
       </div>
