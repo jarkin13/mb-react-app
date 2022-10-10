@@ -26,6 +26,7 @@ const Header = () => {
   const onUserMenuClick = () => {
     setUserMenuShow(!userMenuShow);
   };
+
   return (
     <header>
       <div className="column column-start">
