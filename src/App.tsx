@@ -1,6 +1,7 @@
 import Header from "./ui/Header";
+import ShortsPreviews from "./ui/ShortsPreviews";
 import Tags from "./ui/Tags";
-import VideoPreview from "./ui/VideoPreview";
+import VideoPreview from "./ui/Thumnailpreviews/VideoPreview";
 
 const App = () => {
   return (
@@ -9,7 +10,10 @@ const App = () => {
       <div className="filterbar">
         <Tags />
       </div>
-      <VideoPreview />
+      <div className="Content">
+        <VideoPreview />
+        <ShortsPreviews />
+      </div>
     </div>
   );
 };
