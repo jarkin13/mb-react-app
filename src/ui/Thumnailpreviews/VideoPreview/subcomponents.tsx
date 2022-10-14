@@ -50,3 +50,16 @@ export const VideoBody = styled.div`
   width: 1664px;
   margin-left: 330px;
 `;
+
+export const VideoPreviewThumbnail = styled.img`
+  width: 284.797px;
+  height: 159.797px;
+`;
+
+export const ChangeStyle = styled.div`
+  height: 20px;
+  margin-top: -10px;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr 1fr;
+`;

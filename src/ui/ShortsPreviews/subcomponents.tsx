@@ -3,12 +3,13 @@ import styled, { css } from "styled-components/macro";
 export const HeaderTitle = styled.p`
   padding-left: 50px;
   margin-top: -23px;
+  height: 40px;
+  margin-bottom: 0px;
 `;
 
 export const HeaderBox = styled.div`
   margin-left: 300px;
   margin-top: 24px;
-  height: 40px;
 `;
 
 export const ShortIcon = styled.div`
@@ -18,8 +19,8 @@ export const ShortIcon = styled.div`
 `;
 
 export const ShortsPreviewThumbnail = styled.img`
-  width: 151.094;
-  height: 267.422;
+  width: 151.094px;
+  height: 267.422px;
 `;
 
 export const ShortsLink = styled.div`
@@ -30,4 +31,7 @@ export const ShortsLink = styled.div`
   margin-left: 330px;
 `;
 
-export const ShortsBody = styled.div``;
+export const ShortsVideos = styled.div`
+  width: 151.094px;
+  height: 267.422px;
+`;

@@ -10,10 +10,9 @@ const App = () => {
       <div className="filterbar">
         <Tags />
       </div>
-      <div className="Content">
-        <VideoPreview />
-        <ShortsPreviews />
-      </div>
+      <VideoPreview />
+      <ShortsPreviews />
+      <div className="Content"></div>
     </div>
   );
 };
