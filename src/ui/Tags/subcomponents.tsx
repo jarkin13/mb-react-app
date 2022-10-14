@@ -5,12 +5,17 @@ const FilterBar = styled.div`
   background-color: #fff;
   top: 56px;
   left: 264px;
-  height: 56px;
+  max-height: 56px;
   overflow: hidden;
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: row;
   align-items: center;
   z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: none;
+  border-right: none;
 `;
 
 export default FilterBar;
+
+export const Border = styled.div``;

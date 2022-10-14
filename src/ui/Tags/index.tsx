@@ -1,10 +1,11 @@
 import Tag from "../Tag";
-import FilterBar from "./subcomponents";
+import FilterBar, { Border } from "./subcomponents";
 
 const Tags = () => {
   return (
-    <FilterBar>
-      <div>
+    <div>
+      <Border />
+      <FilterBar>
         <Tag text="All" active />
         <Tag text="Live" active />
         <Tag text="Music" active />
@@ -19,11 +20,9 @@ const Tags = () => {
         <Tag text="Podcasts" active />
         <Tag text="Call of Duty: Warzone" active />
         <Tag text="Fast food" active />
-        <Tag text="Freestyle Rap" active />
-        <Tag text="Laughter" active />
-        <Tag text="Tools" active />
-      </div>
-    </FilterBar>
+      </FilterBar>
+      <Border />
+    </div>
   );
 };
 
