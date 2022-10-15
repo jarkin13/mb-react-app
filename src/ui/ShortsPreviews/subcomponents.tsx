@@ -35,3 +35,5 @@ export const ShortsVideos = styled.div`
   width: 151.094px;
   height: 267.422px;
 `;
+
+export const ShortsAll = styled.div``;

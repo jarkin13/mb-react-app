@@ -5,6 +5,7 @@ import {
   HeaderBox,
   HeaderTitle,
   ShortIcon,
+  ShortsAll,
   ShortsLink,
   ShortsPreviewThumbnail,
   ShortsVideos,
@@ -12,7 +13,7 @@ import {
 
 const ShortsPreviews = () => {
   return (
-    <div>
+    <ShortsAll>
       <HeaderBox>
         <ShortIcon>
           <ShortsHeader></ShortsHeader>
@@ -112,7 +113,7 @@ const ShortsPreviews = () => {
           <ShortsViews shortsviewstext="1.8m views" />
         </ShortsVideos>
       </ShortsLink>
-    </div>
+    </ShortsAll>
   );
 };
 
