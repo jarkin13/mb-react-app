@@ -9,4 +9,5 @@ export const ShortTitleStyle = styled.p`
   overflow: hidden;
   white-space: wrap;
   margin-bottom: 4px;
+  cursor: pointer;
 `;

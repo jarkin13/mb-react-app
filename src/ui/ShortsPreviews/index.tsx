@@ -15,8 +15,19 @@ import {
   ShowMoreButton,
   ShowMorestyle,
 } from "./subcomponents";
+import { useState } from "react";
 
 const ShortsPreviews = () => {
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovering(false);
+  };
+
   return (
     <ShortsAll>
       <HeaderBox>
@@ -31,11 +42,15 @@ const ShortsPreviews = () => {
 
       <ShortsLink>
         <ShortsVideos>
-          <ShortsPreviewThumbnail
-            src="https://i.ytimg.com/vi/ofOgJ_F7s1E/hq720_2.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&amp;rs=AOn4CLCtQTCU3qk_a5h2jeIWHEM10zzTtA"
-            alt=""
-          />
-
+          <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+            <ShortsPreviewThumbnail
+              src="https://i.ytimg.com/vi/ofOgJ_F7s1E/hq720_2.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&amp;rs=AOn4CLCtQTCU3qk_a5h2jeIWHEM10zzTtA"
+              alt=""
+            />
+          </div>
+          {isHovering && (
+            <ShortsTitle shortstext="These two are constantly..." />
+          )}
           <ShortsTitle shortstext="These two are constantly..." />
 
           <ShortsViews shortsviewstext="858k views" />
