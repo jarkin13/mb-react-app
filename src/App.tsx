@@ -11,10 +11,12 @@ const App = () => {
       <div className="filterbar">
         <Tags />
       </div>
-      <VideoPreview />
-      <ShortsPreviews />
-      <VideoButtons />
-      <div className="Content"></div>
+
+      <div className="Content">
+        <VideoPreview />
+        <ShortsPreviews />
+        <VideoButtons />
+      </div>
     </div>
   );
 };

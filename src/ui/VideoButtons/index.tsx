@@ -23,7 +23,9 @@ import { useState } from "react";
 const VideoButtons = () => {
   const [count, setCount] = useState(0);
 
-  function handleClick() {}
+  function handleClick() {
+    //Subscribe states its received function here
+  }
 
   function likeCounter() {
     setCount(count + 1);

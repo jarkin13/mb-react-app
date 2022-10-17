@@ -13,6 +13,7 @@ export const HeaderBox = styled.div`
   margin-left: 330px;
   margin-top: 24px;
   height: 40px;
+  width: 1489px;
   border-top: 4px solid rgba(0, 0, 0, 0.2);
   padding-top: 24px;
   padding-bottom: 24px;
@@ -45,15 +46,10 @@ export const ShortsVideos = styled.div`
   height: 267.422px;
 `;
 
-export const ShortsAll = styled.div`
-  height: 420px;
-`;
-
 export const Notinterestedstyle = styled.div`
   height: 24px;
   width: 24px;
   margin-left: auto;
-  margin-right: 86px;
   margin-top: -24px;
   padding-right: 8px;
 `;

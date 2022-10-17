@@ -8,7 +8,6 @@ import {
   HeaderTitle,
   Notinterestedstyle,
   ShortIcon,
-  ShortsAll,
   ShortsLink,
   ShortsPreviewThumbnail,
   ShortsVideos,
@@ -29,7 +28,7 @@ const ShortsPreviews = () => {
   };
 
   return (
-    <ShortsAll>
+    <div>
       <HeaderBox>
         <ShortIcon>
           <ShortsHeader></ShortsHeader>
@@ -141,7 +140,7 @@ const ShortsPreviews = () => {
           <ShortShowMore />
         </ShowMorestyle>
       </ShowMoreButton>
-    </ShortsAll>
+    </div>
   );
 };
 

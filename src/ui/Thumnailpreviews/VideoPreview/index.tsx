@@ -1,4 +1,3 @@
-import { useState } from "react";
 import VideoViews from "../VideoViews";
 import YoutuberName from "../YoutuberName";
 import VideoTitleText from "../VideoTitleText";
@@ -17,7 +16,6 @@ import {
 } from "./subcomponents";
 
 const VideoPreview = () => {
-  const [verified, setVerified] = useState(false);
   return (
     <VideoBody>
       <VideoLink>
