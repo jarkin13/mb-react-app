@@ -1,4 +1,5 @@
 import {
+  ButtonsAll,
   ButtonsIconsStyle,
   ButtonText,
   ClipButton,
@@ -17,16 +18,25 @@ import { ReactComponent as ShareIcon } from "./VideoButtonsIcons/sharebutton.svg
 import { ReactComponent as ClipIcon } from "./VideoButtonsIcons/clipbutton.svg";
 import { ReactComponent as SaveIcon } from "./VideoButtonsIcons/savebutton.svg";
 import { ReactComponent as ReportIcon } from "./VideoButtonsIcons/reportbutton.svg";
+import { useState } from "react";
 
 const VideoButtons = () => {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {}
+
+  function likeCounter() {
+    setCount(count + 1);
+  }
+
   return (
-    <div>
+    <ButtonsAll>
       <TopLevelButtons>
         <LikesButton>
           <ButtonsIconsStyle>
             <LikesIcon />
           </ButtonsIconsStyle>
-          <ButtonText>1.6k</ButtonText>
+          <ButtonText onClick={likeCounter}>{count}</ButtonText>
         </LikesButton>
         <DisLikesButton>
           <ButtonsIconsStyle>
@@ -59,9 +69,9 @@ const VideoButtons = () => {
         </ReportButton>
       </TopLevelButtons>
       <SubscribeButton>
-        <SubscribeText>SUBSCRIBE</SubscribeText>
+        <SubscribeText onClick={handleClick}>SUBSCRIBE</SubscribeText>
       </SubscribeButton>
-    </div>
+    </ButtonsAll>
   );
 };
 

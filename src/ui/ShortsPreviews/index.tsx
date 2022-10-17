@@ -1,14 +1,19 @@
 import ShortsTitle from "../ShortsTitle";
 import ShortsViews from "../ShortsViews";
 import { ReactComponent as ShortsHeader } from "./shortsheader.svg";
+import { ReactComponent as NotInterested } from "./notinterested.svg";
+import { ReactComponent as ShortShowMore } from "./shortShowMore.svg";
 import {
   HeaderBox,
   HeaderTitle,
+  Notinterestedstyle,
   ShortIcon,
   ShortsAll,
   ShortsLink,
   ShortsPreviewThumbnail,
   ShortsVideos,
+  ShowMoreButton,
+  ShowMorestyle,
 } from "./subcomponents";
 
 const ShortsPreviews = () => {
@@ -18,6 +23,9 @@ const ShortsPreviews = () => {
         <ShortIcon>
           <ShortsHeader></ShortsHeader>
         </ShortIcon>
+        <Notinterestedstyle>
+          <NotInterested />
+        </Notinterestedstyle>
         <HeaderTitle>Shorts</HeaderTitle>
       </HeaderBox>
 
@@ -113,6 +121,11 @@ const ShortsPreviews = () => {
           <ShortsViews shortsviewstext="1.8m views" />
         </ShortsVideos>
       </ShortsLink>
+      <ShowMoreButton>
+        <ShowMorestyle>
+          <ShortShowMore />
+        </ShowMorestyle>
+      </ShowMoreButton>
     </ShortsAll>
   );
 };

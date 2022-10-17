@@ -6,6 +6,7 @@ export const VideoLink = styled.div`
   gap: 1em;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   width: 284.797px;
+  cursor: pointer;
 `;
 export const YoutuberIcon = styled.img`
   height: 36px;
@@ -21,11 +22,11 @@ export const VerifiedStyle = styled.div`
 `;
 
 export const SecondVideoLink = styled.div`
-  margin-top: 74px;
   display: grid;
   gap: 1em;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   width: 284.797px;
+  cursor: pointer;
 `;
 
 export const ViewsDivider = styled.span`
@@ -46,8 +47,7 @@ export const ViewsandTimeBar = styled.span`
 `;
 
 export const VideoBody = styled.div`
-  border-bottom: 4px solid rgba(0, 0, 0, 0.2);
-  width: 1664px;
+  width: 1572px;
   margin-left: 330px;
 `;
 

@@ -83,3 +83,9 @@ export const SubscribeText = styled.p`
   font-weight: 500;
   letter-spacing: 0.5;
 `;
+
+export const ButtonsAll = styled.div`
+  height: 36px;
+  margin-left: 215px;
+  padding-top: 32px;
+`;
