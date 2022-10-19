@@ -23,8 +23,8 @@ export const TagSelector = styled.div<TagSelectorProps>`
   display: inline-flex;
   flex-wrap: nowrap;
   margin-right: 10px;
-
- 
+  margin-top: 10px;
+  margin-bottom: 10px;
   }
 
   ${({ $active }) => {
