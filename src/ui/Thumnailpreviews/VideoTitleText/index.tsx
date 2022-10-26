@@ -21,6 +21,7 @@ interface VideoTitleProps {
   timeAgoPosted?: string;
   youtuberName: string;
 }
+
 const VideoTitleText = ({
   viewsText,
   youtuberName,

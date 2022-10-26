@@ -1,7 +1,5 @@
 import Header from "./ui/Header";
-
 import Tags from "./ui/Tags";
-
 import VideoTitleText from "./ui/Thumnailpreviews/VideoTitleText";
 import VideoButtons from "./ui/VideoButtons";
 
@@ -16,7 +14,7 @@ const App = () => {
         <VideoTitleText
           videoTitle={"House Of Dragon"}
           viewsText={"100k"}
-          timeAgoPosted={""}
+          timeAgoPosted={"3 Hours Ago"}
           youtuberName={"Emergency Awesome"}
           videoThumbnail={
             "https://i.ytimg.com/vi/h0a5i-jJ77s/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAz_LqzHr_Nn01JglgAQr4vKZYnbgd"
